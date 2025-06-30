@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wallet Approval Required</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #111; color: white; text-align: center; padding: 50px;}
+    .warning { color: #ff4c4c; font-weight: bold; font-size: 24px; }
+    input { padding: 10px; font-size: 16px; margin-top: 20px; width: 300px; }
+    .btn { background: #ff4c4c; color: white; padding: 15px 30px; border: none; font-size: 18px; cursor: pointer; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1 class="warning">⚠️ Warning: Wallet Approval Required ⚠️</h1>
+  <p>You have been redirected here from <code>settings.burnt.com</code>.</p>
+  <p>If you approve, your funds could be at risk!</p>
+  
+  <form onsubmit="event.preventDefault(); alert('Simulated key captured! Do NOT enter real keys!');">
+    <input type="text" placeholder="Enter your private key" required />
+    <br />
+    <button class="btn" type="submit">Approve</button>
+  </form>
+</body>
+</html>
